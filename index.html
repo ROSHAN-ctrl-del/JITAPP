@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JIT Global Infosystem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: { // Main operational blue
+                DEFAULT: '#2563eb', // blue-600
+                light: '#60a5fa',   // blue-400
+                dark: '#1d4ed8',    // blue-700
+              },
+              secondary: { // Grays for text and less prominent UI
+                DEFAULT: '#475569', // slate-600 (main text on white)
+                light: '#94a3b8',   // slate-400 (secondary text)
+                dark: '#1e293b',    // slate-800 (headings, dark bg elements)
+              },
+              accent: { // Distinct, vibrant blue for CTAs
+                DEFAULT: '#0ea5e9', // sky-500
+                hover: '#0284c7',   // sky-600
+              },
+              neutral: { // Whites and light grays for backgrounds/borders
+                light: '#f8fafc',   // slate-50 (off-white background)
+                DEFAULT: '#ffffff',   // white (main background)
+                dark: '#e2e8f0',    // slate-200 (borders, dividers)
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-neutral-light font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
